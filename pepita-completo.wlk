@@ -1,9 +1,9 @@
-object pepita{ //objeto pepita que representa un ave
+object pepita{ 
     var energia = 100
  
-    method volar(distancia) { //mensaje 
+    method volar(distancia) { 
         energia = energia - 10 - distancia/10
-    } //alcance de elemento
+    } 
 
     method descansar() {
         energia = energia + 10
@@ -18,7 +18,9 @@ object pepita{ //objeto pepita que representa un ave
 
     }
 
-} //alcance del estado interno
+    method energia() = energia
+
+} 
 
 object alpiste {
     method energiaQueAporta() {
@@ -53,29 +55,24 @@ object pepon {
     }
 
     method volar(distancia) {
-        energia = energia - 20 - (2**distancia)
+        energia = energia - 20 - 2*distancia
     }
 
     method estaCansada() {
-        return energia < 35
+        return energia < 34
     }
 }
 
 object rebeca {
     var ave = pepita
-    var alimento = alpiste
     var cenas = 0
 
-    method ave(_ave) { //para setear el ave que se le da a rebeca
+    method ave(_ave) { 
         ave = _ave
         cenas = 0
     }
 
-    method alimento(_alimento) { //para setear el alimento que se le da a la ave
-        alimento = _alimento
-    }
-
-    method alimentar() {
+    method alimentar(alimento) {
         ave.comer(alimento)
         cenas = cenas + 1
     }
