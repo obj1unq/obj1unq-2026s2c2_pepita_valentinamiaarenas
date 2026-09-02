@@ -1,0 +1,26 @@
+import pepita-completo.*
+describe "Tests de pepita"{
+    test "Pepita inicia con 100 de energia" {
+        assert.equals(100, pepita.energia())
+    }
+
+    test "Pepita puede volar" {
+        pepita.energia(100)
+        pepita.volar(10)
+        assert.equals(89, pepita.energia())
+        assert.throwsException({pepita.volar(1000)})
+        assert.equals(89, pepita.energia())
+    }
+}
+
+describe "Tests de pepon" {
+  test "Alimentacion de pepon" {
+    pepon.energia(30)
+    pepon.comer(alpiste)
+    assert.equals(42.5, pepon.energia())
+    assert.throwsException({pepon.comer(alpiste)})
+    assert.equals(42.5, pepon.energia())
+    pepon.comer(manzana)
+    assert.throwsException({pepon.comer(manzana)})
+  }
+}
