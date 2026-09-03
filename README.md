@@ -99,13 +99,13 @@ Nota: Si rebeca está entrenando a pepita y se le pide nuevamente que entrene a 
 
 Teniendo en cuenta tu solución del problema, respondé las preguntas siguientes:
 1. ¿Qué métodos son consultas y cuáles son órdenes?
-   -RTA: en pepita el métodos de consulta es estaCansada() y el de orden es volar(), en pepon el método de consulta es estaCansada() y el de orden es comer(alimento), y por ultimo en rebeca no tengo métodos de colsultas, pero tengo de orden y es alimentar(alimento)
+   -RTA: en pepita el métodos de consulta es estaCansada() y el de orden es volar(), en pepon el método de consulta es estaCansada() y el de orden es comer(alimento), y por ultimo en rebeca el método de consulta es cenas(), y de orden y es alimentar(alimento)
 2. En cuanto a cada situación que manifiesta polimorfismo:
    
    a. ¿Cuál es el mensaje polimórfico y quién lo envía?
-      -RTA: el mensaje polimorfico es energiaQueAporta() y lo envia pepita y pepon
+      -RTA: el mensaje polimórfico es energiaQueAporta() y lo envía pepita y pepon
    b. Considerando los objetos que entienden el mensaje polimórfico ¿Qué nombre le pondrías al **tipo polimórfico**?
-      -RTA: el mombre que le pondria al tipo polimorfico seria "Alimento"
+      -RTA: el nombre que le pondría al tipo polimórfico seria "Alimento"
    d. ¿Qué objetos implementan ese tipo?
       -RTA: los objetos que implementan este tipo son manzana y alpiste
 
